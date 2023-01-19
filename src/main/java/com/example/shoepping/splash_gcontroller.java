@@ -60,7 +60,7 @@ public class splash_gcontroller implements Initializable {
                 });
 
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                Thread.currentThread().interrupt();
             }
         }
     }
